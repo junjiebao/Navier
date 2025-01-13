@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>纳维船舶科技 - 专业铝合金游艇制造商</title>
+    <title>TideMaster - Aluminum Boat Manufacturer</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -72,6 +72,7 @@
 
     /* 调整内容区域的对比度 */
     .hero-content,
+    
     .range-content,
     .tech-content {
         position: relative;
@@ -288,41 +289,52 @@
 <body class="dark-theme">
     <!-- 顶部导航 -->
     <header class="main-header">
-        <div class="header-container">
-            <div class="logo">
-                <a href="/">
-                    <img src="images\starbboard up.png" alt="纳维船舶科技" class="logo-img" style="max-width: 150px;">
-                </a>
-            </div>
+        <div class="container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="images/starbboard up.png" alt="TIDEMASTER" class="logo-img">
+            </a>
+
+            <!-- 主导航 -->
             <nav class="main-nav">
                 <ul class="nav-list">
                     <li class="nav-item dropdown">
-                        <a href="#boat-range">船型系列</a>
+                        <a href="#boat-range" class="nav-link">BOAT SERIES</a>
                         <div class="dropdown-menu">
                             <div class="menu-content">
                                 <ul class="dropdown-list">
                                     <li><a href="products/TideMaster Cat.html">TideMaster Cat</a></li>
                                     <li><a href="products/TideMaster Hyper.html">TideMaster Hyper</a></li>
-                                    <li><a href="products\TideMaster Leisure.html">TideMaster Leisure</a></li>
+                                    <li><a href="products/TideMaster Leisure.html">TideMaster Leisure</a></li>
                                 </ul>
                             </div>
                         </div>
                     </li>
-                    <li><a href="#why-navier">为什么选择纳维</a></li>
-                    <li><a href="#about-us">关于我们</a></li>
-                    <li><a href="#videos">视频与新闻</a></li>
-                    <li><a href="#dealers">经销商</a></li>
+                    <li class="nav-item">
+                        <a href="#why-navier" class="nav-link">WHY CHOOSE TIDEMASTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-us" class="nav-link">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#videos" class="nav-link">VIDEOS & NEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#dealers" class="nav-link">DEALERS</a>
+                    </li>
                 </ul>
             </nav>
+
+            <!-- 右侧操作区 -->
             <div class="header-actions">
                 <div class="dropdown">
-                    <a href="#" class="btn btn-primary build-btn">BUILD YOUR BOAT</a>
+                    <a href="#" class="btn-build">BUILD YOUR BOAT</a>
                     <div class="build-menu">
                         <div class="menu-content">
                             <ul class="menu-list">
-                                <li><a href="products/TideMaster Cat.html">TideMaster Cat 38</a></li>
-                                <li><a href="products/TideMaster Hyper.html">TideMaster Hyper 38</a></li>
-                                <li><a href="products\TideMaster Leisure.html">TideMaster Leisure 43</a></li>
+                                <li><a href="products/TideMaster Cat.html">TideMaster Cat</a></li>
+                                <li><a href="products/TideMaster Hyper.html">TideMaster Hyper</a></li>
+                                <li><a href="products/TideMaster Leisure.html">TideMaster Leisure</a></li>
                             </ul>
                         </div>
                     </div>
@@ -334,33 +346,33 @@
     <!-- 主横幅 -->
     <section class="hero">
         <div class="hero-background">
-            <img src="images\starbboard up.png" alt="纳维船舶科技" class="hero-video">
+            <img src="images\starbboard up.png" alt="TideMaster" class="hero-video">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <h1>冒险精神/安全航行</h1>
+            <h1>Adventure Spirit/Safe Navigation</h1>
             <div class="hero-text">
-                <p>阿联酋纳维船舶科技，专注于高品质定制铝合金船的设计与建造,针对中东市场精心设计和打造，纳维船型系列以智能化、高强度、稳定性和多功能性成为中东市场的标杆。</p>
+                <p>At TideMaster, we live for the adventure and empower fishing enthusiasts, hunters, gatherers, and thrill seekers with the toughest, most reliable boats on the water. For those who seek adventure and challenge boundaries, our boats are built to withstand the harshest conditions. With cutting-edge technology and customizable options, we ensure a perfect fit for every journey, whether it’s fishing, hunting, or creating cherished memories with loved ones. Join our community and experience advanced technology that stands the test of time. TideMaster: Unleash the Every Adventure, Master the All Tides.</p>
             </div>
         </div>
     </section>
 <!-- 船型展示区域 -->
 <section id="boat-range" class="boat-range">
     <div class="container">
-        <h2>船型系列</h2>
+        <h2>Boat Series</h2>
         <div class="boat-grid">
             <!-- TIDEMASTER CAT -->
             <div class="boat-card">
                 <div class="boat-image">
                     <img src="images/图片_20250102145614.jpg" alt="TIDEMASTER CAT">
                     <div class="boat-overlay">
-                        <span class="tags">稳定、可靠、节能</span>
-                        <a href="products/TideMaster Cat.html" class="btn btn-secondary">了解更多</a>
+                        <span class="tags">Stable, Reliable, Energy-Efficient</span>
+                        <a href="products/TideMaster Cat.html" class="btn btn-secondary">Learn More</a>
                     </div>
                 </div>
                 <div class="boat-info">
-                    <h3>探索 TideMaster Cat 系列</h3>
-                    <p>高效节能的双体船设计，为您带来稳定舒适的海上体验</p>
+                    <h3>Discover the TideMaster Cats Series</h3>
+                    <p>Experience the ultimate in stability and comfort with our high-performance catamaran design, crafted for unforgettable adventures.</p>
                 </div>
             </div>
 
@@ -369,13 +381,13 @@
                 <div class="boat-image">
                     <img src="images/图片_20250102145728.jpg" alt="TIDEMASTER HYPER">
                     <div class="boat-overlay">
-                        <span class="tags">高效、智能、舒适</span>
-                        <a href="products/TideMaster Hyper.html" class="btn btn-secondary">了解更多</a>
+                        <span class="tags">High-efficiency, Superior performance</span>
+                        <a href="products/TideMaster Hyper.html" class="btn btn-secondary">Learn More</a>
                     </div>
                 </div>
                 <div class="boat-info">
-                    <h3>探索 TideMaster Hyper 系列</h3>
-                    <p>高性能巡航船，为您带来极致的航海体验</p>
+                    <h3>Explore the TideMaster Hyper Series</h3>
+                    <p>Unleash the power of innovation with our M-Hull design, delivering unmatched performance and an extraordinary experience on every voyage.</p>
                 </div>
             </div>
 
@@ -384,13 +396,13 @@
                 <div class="boat-image">
                     <img src="images/W430/leisure 1.png" alt="TIDEMASTER LEISURE">
                     <div class="boat-overlay">
-                        <span class="tags">豪华、休闲、智能</span>
-                        <a href="products/TideMaster Leisure.html" class="btn btn-secondary">了解更多</a>
+                        <span class="tags">Family-oriented, Leisure, Intelligent</span>
+                        <a href="products/TideMaster Leisure.html" class="btn btn-secondary">Learn More</a>
                     </div>
                 </div>
                 <div class="boat-info">
-                    <h3>探索 TideMaster Leisure 系列</h3>
-                    <p>豪华休闲游艇，为您打造完美的海上生活方式</p>
+                    <h3>Discover the TideMaster Leisure Series</h3>
+                    <p>Embrace in luxury and family comfort with our exquisitely crafted yachts, designed for unforgettable moments and the perfect sea-going lifestyle.</p>
                 </div>
             </div>
         </div>
@@ -483,18 +495,20 @@
     <!-- 技术特点 -->
     <section class="tech-features">
         <div class="container">
-            <h2>纳维船舶科技</h2>
+            <h2>TideMaster</h2>
             <div class="tech-content">
-                <p class="tech-intro">在纳维，我们打造的每一艘船都旨在激发探索精神，为钓鱼爱好者和探险家提供最坚固、最可靠的铝合金游艇。</p>
+                <p class="tech-intro">In TideMaster, every boat we build is designed to inspire exploration, providing the most robust and reliable aluminum yachts for fishing enthusiasts and adventurers.</p>
                 <div class="tech-grid">
                     <div class="tech-item">
-                        <h3>纳维5083海事铝合金6MM船体</h3>
-                        <p>拥有20年经验和六代船体设计，纳维TMC™和TMH™铝合金船体树立了性能、强度和创新的标准。</p>
+                        <h3>TideMaster 5083 Marine Aluminum 6MM Hull</h3>
+                        <p>With 20 years of experience and six generations of hull design, the TideMaster TMC™ and TMH™ aluminum hulls set the standard for performance, strength, and innovation.</p>
                         <ul class="feature-list">
-                            <li>平衡高效船体设计</li>
-                            <li>智能航行态势感知</li>
-                            <li>人体工学船内布置</li>
-                            <li>模块船体结构系统</li>
+                            <li>Balanced, high-efficiency hull design</li>
+                            <li>Unprecedented strength and durability</li>
+                            <li>Intelligent navigation and autonomous pilot support</li>
+                            <li>Ergonomic interior layout and luxurious features</li>
+                            <li>Modular structure and customizable options</li>
+                            <li>Extreme weather resistance and safty performance</li>
                         </ul>
                     </div>
                 </div>
@@ -505,19 +519,19 @@
     <!-- 品牌优势 -->
     <section class="why-us">
         <div class="container">
-            <h2>为什么选择纳维</h2>
+            <h2>Why Choose TideMaster</h2>
             <div class="features-grid">
                 <div class="feature">
-                    <h3>26年造船经验</h3>
-                    <p>专注铝合金船艇制造，技术精湛</p>
+                    <h3>26 years of shipbuilding experience</h3>
+                    <p>Focus on aluminum boat manufacturing, with expert craftsmanship</p>
                 </div>
                 <div class="feature">
-                    <h3>工艺精良</h3>
-                    <p>全铝合金焊接，坚固耐用</p>
+                    <h3>Expert craftsmanship</h3>
+                    <p>Full aluminum welding, durable and reliable</p>
                 </div>
                 <div class="feature">
-                    <h3>定制灵活</h3>
-                    <p>满足您的个性化需求</p>
+                    <h3>Customizable</h3>
+                    <p>Meet your personalized needs</p>
                 </div>
             </div>
         </div>
@@ -526,7 +540,7 @@
     <!-- 视频展示 -->
     <section class="video-showcase">
         <div class="container">
-            <h2>最新视频</h2>
+            <h2>Latest Videos</h2>
             <div class="video-grid">
                 <div class="video-item">
                     <div class="video-wrapper">
@@ -534,7 +548,7 @@
                             width="100%" 
                             height="100%" 
                             src="https://www.youtube.com/embed/zXEMFH2uYXY" 
-                            title="游艇视频" 
+                            title="Boat Video" 
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen>
@@ -551,22 +565,22 @@
             <div class="footer-section company-info">
                 <div class="footer-logo">
                     <img src="images\starbboard up.png" alt="纳维船舶科技" class="logo-img" style="max-width: 120px;">
-                    <span class="logo-text">高端铝合金游艇</span>
+                    <span class="logo-text">High-quality aluminum yachts、Boats</span>
                 </div>
                 <p class="company-desc">
-                    阿联酋迪拜纳维船舶科技致力于抓住阿联酋对中小型游艇和专业海钓船日益增长的需求，通过从针对性的研发适合当地的高品质铝合金船舶，并逐步实施建立本地制造计划，公司不仅将打造强大的市场影响力，还将助力阿联酋实现成为智能化高端船舶制造中心的愿景。凭借清晰的商业战略、强大的国际合作伙伴关系以及对客户满意度的承诺，纳维船舶科技将在该地区实现持续增长与成功。
+                    TideMaster is dedicated to seizing the growing demand for mid-sized yachts and professional fishing boats in the UAE, through targeted research and development of high-quality aluminum boats suitable for local conditions, and gradually implementing a local manufacturing plan. The company will not only establish a strong market presence but also contribute to the UAE's vision of becoming a smart, high-end shipbuilding center. With a clear business strategy, strong international partnerships, and a commitment to customer satisfaction, TideMaster will achieve sustained growth and success in the region.
                 </p>
             </div>
 
             <div class="footer-section contact-info">
-                <h3>联系方式</h3>
+                <h3>Contact Information</h3>
                 <p class="phone">400-888-9999</p>
-                <p class="company-id">阿联酋企业代码：91000XX</p>
-                <p class="address">阿联酋迪拜海事城38-88号<br>海湾创新中心3号楼142室</p>
+                <p class="company-id">UAE Company Code: 91000XX</p>
+                <p class="address">Dubai Maritime City, 38-88, Gulf Innovation Center, 3rd Floor, Room 142<br>Dubai, UAE</p>
             </div>
 
             <div class="footer-section connect">
-                <h3>关注我们</h3>
+                <h3>Follow Us</h3>
                 <div class="social-links">
                     <a href="#" class="social-link" title="WeChat">
                         <i class="fab fa-weixin"></i>
@@ -596,14 +610,14 @@
             </div>
 
             <div class="footer-section quick-links">
-                <h3>快速链接</h3>
+                <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#contact">联系我们</a></li>
-                    <li><a href="#options">选配件</a></li>
-                    <li><a href="#trailers">拖车</a></li>
-                    <li><a href="#gear">装备</a></li>
-                    <li><a href="#warranty">保修政策</a></li>
-                    <li><a href="#dealer-portal">经销商平台</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#options">Options</a></li>
+                    <li><a href="#trailers">Trailers</a></li>
+                    <li><a href="#gear">Equipment</a></li>
+                    <li><a href="#warranty">Warranty Policy</a></li>
+                    <li><a href="#dealer-portal">Dealer Portal</a></li>
                 </ul>
             </div>
         </div>
@@ -611,14 +625,14 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="copyright">
-                    <p>&copy; 2024 纳维船舶科技</p>
+                    <p>&copy; 2024 TideMaster</p>
                     <ul class="legal-links">
-                        <li><a href="#disclaimer">免责声明</a></li>
-                        <li><a href="#privacy">隐私政策</a></li>
+                        <li><a href="#disclaimer">Disclaimer</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="credits">
-                    <p>网站设计：<a href="#agency">创意科技</a></p>
+                    <p>Website Design: <a href="#agency">Dubai Meta Connect Creative Technology</a></p>
                 </div>
             </div>
         </div>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-EN">
+<head>
+    <!-- 保持原有head内容不变 -->
+    <style>
+    /* 新增订单页面样式 */
+    .order-section {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+    }
+
+    .section-title {
+        color: var(--text-light);
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .summary-box {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 1.5rem;
+        border-radius: 6px;
+    }
+
+    .summary-group {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .summary-group:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .summary-group h3 {
+        color: var(--text-light);
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .summary-list {
+        color: var(--text-gray);
+        line-height: 1.6;
+    }
+
+    .price-box {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 1.5rem;
+        border-radius: 6px;
+    }
+
+    .price-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .price-item:last-child {
+        border-bottom: none;
+    }
+
+    .price-item.total {
+        font-weight: bold;
+        color: var(--text-light);
+        padding-top: 1rem;
+        margin-top: 1rem;
+        border-top: 2px solid var(--primary-color);
+    }
+
+    .contact-form {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 2rem;
+        border-radius: 6px;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-group.full-width {
+        grid-column: 1 / -1;
+    }
+
+    .form-group label {
+        display: block;
+        color: var(--text-light);
+        margin-bottom: 0.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.75rem;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+        color: var(--text-light);
+        font-size: 1rem;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: var(--primary-color);
+    }
+
+    .form-actions {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        .form-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .order-section {
+            padding: 1rem;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- 保持原有header和hero部分不变 -->
+
+    <!-- 主要内容 -->
+    <main class="product-detail">
+        <div class="container">
+            <h1 class="page-title">Submit Your Order</h1>
+            <p class="page-subtitle">Review and confirm your TideMaster Cat 38 configuration</p>
+            
+            <!-- 模块一：配置选项摘要 -->
+            <section class="order-section configuration-summary">
+                <h2 class="section-title">Selected Configuration</h2>
+                <div class="summary-box">
+                    <!-- 标准配置 -->
+                    <div class="summary-group">
+                        <h3>Standard Configuration</h3>
+                        <div id="standard-config-list" class="summary-list">
+                            <!-- 将通过 JavaScript 填充 -->
+                        </div>
+                    </div>
+
+                    <!-- 发动机选择 -->
+                    <div class="summary-group">
+                        <h3>Engine Selection</h3>
+                        <div id="selected-engine" class="summary-list">
+                            <!-- 将通过 JavaScript 填充 -->
+                        </div>
+                    </div>
+
+                    <!-- 导航电子设备 -->
+                    <div class="summary-group">
+                        <h3>Navigation Electronics</h3>
+                        <div id="selected-nav" class="summary-list">
+                            <!-- 将通过 JavaScript 填充 -->
+                        </div>
+                    </div>
+
+                    <!-- 可选配件 -->
+                    <div class="summary-group">
+                        <h3>Optional Accessories</h3>
+                        <div id="accessories-list" class="summary-list">
+                            <!-- 将通过 JavaScript 填充 -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 模块二：价格摘要 -->
+            <section class="order-section price-summary-section">
+                <h2 class="section-title">Price Summary</h2>
+                <div class="price-box">
+                    <div class="price-item">
+                        <span>Base Price:</span>
+                        <span id="base-price">$120,000</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Engine:</span>
+                        <span id="engine-price">$0</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Navigation:</span>
+                        <span id="nav-price">$0</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Accessories:</span>
+                        <span id="accessories-price">$0</span>
+                    </div>
+                    <div class="price-item total">
+                        <span>Total Price:</span>
+                        <span id="total-price">$120,000</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 模块三：联系信息表单 -->
+            <section class="order-section contact-section">
+                <h2 class="section-title">Contact Information</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country *</label>
+                            <input type="text" id="country" name="country" required>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Additional Comments</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Submit Order</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- 保持原有footer内容不变 -->
+</body>
+</html>
